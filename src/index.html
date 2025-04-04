@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TV Series</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="row align-items-center pl-4 p-1" style="background-color: deepskyblue">
+            <img src="../img/logo-tv.jpg" class="img-fluid rounded-circle mr-2" style="max-height: 50px;" alt="logo">
+            <h1>TV Series</h1>
+        </div>
+
+        <div class="row">
+            <div class="col m-4">
+                <table class="table border">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Channel</th>
+                        <th>Seasons</th>
+                    </tr>
+                    </thead>
+                    <tbody id="series"></tbody>
+                </table>
+
+                <div class="row ml-2">
+                    <p class="pr-2"><b>Seasons average: </b></p>
+                    <p id="seasons-average">0</p>
+                </div>
+            </div>
+
+            <div id="description" class="card m-4" style="width: 400px; height: auto;">
+                <p class="m-4" style="color:lightgrey; font-size: 20px;"><b>Selecciona una serie para desplegar su información.</b></p>
+            </div>
+        </div>
+
+        <script type="module" src="../scripts/src/serie.js" ></script>
+        <script type="module" src="../scripts/src/dataSeries.js" ></script>
+        <script type="module" src="../scripts/src/main.js"></script>
+    </body>
+</html>
