@@ -1,4 +1,4 @@
-# TV SERIES - Taller TypeScript  
+# TV SERIES - Taller 2 TypeScript
 
 Este proyecto es un sitio web interactivo que funciona como un ranking de series de televisión. Al hacer clic sobre el nombre de una serie, se despliega información detallada como su descripción, imagen de portada y un enlace. Su objetivo principal es aprender sobre **TypeScript** para la creación y manipulación de páginas web estructuradas, estilizadas y responsivas.  
 
