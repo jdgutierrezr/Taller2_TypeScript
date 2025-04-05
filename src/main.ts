@@ -8,23 +8,24 @@ const seasonsAvgElement: HTMLElement = document.getElementById( 'seasons-average
 renderSeriesInTable( dataSeries );
 seasonsAvgElement.innerHTML = `${getSeasonsAverage( dataSeries )}`
 
-function renderSeriesInTable(series: Serie[]): void {
-    console.log("Desplegando cursos");
+function renderSeriesInTable( series: Serie[] ): void 
+{
+    console.log("Desplegando series");
 
-    series.forEach((serie) => {
-        let trElement = document.createElement("tr");
+    series.forEach( (serie) => {
+        let trElement = document.createElement( "tr" );
 
-        const tdName = document.createElement("td");
-        const button = document.createElement("button");
+        const tdName = document.createElement( "td" );
+        const button = document.createElement( "button" );
 
         button.textContent = serie.name;
         button.className = "border-0";
         button.style.color = "blue";
         button.style.cursor = "pointer";
 
-        button.addEventListener("click", () => openDescription(serie));
+        button.addEventListener( "click", () => openDescription(serie) );
 
-        tdName.appendChild(button);
+        tdName.appendChild( button );
 
         trElement.innerHTML = `
             <td>${serie.position}</td>
@@ -32,9 +33,9 @@ function renderSeriesInTable(series: Serie[]): void {
             <td>${serie.channel}</td>
             <td>${serie.seasons}</td>`;
 
-        trElement.children[1].replaceWith(tdName);
+        trElement.children[1].replaceWith( tdName );
 
-        seriesTbody.appendChild(trElement);
+        seriesTbody.appendChild( trElement );
     });
 }
 

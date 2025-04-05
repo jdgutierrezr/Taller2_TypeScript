@@ -5,7 +5,7 @@ var seasonsAvgElement = document.getElementById('seasons-average');
 renderSeriesInTable(dataSeries);
 seasonsAvgElement.innerHTML = "".concat(getSeasonsAverage(dataSeries));
 function renderSeriesInTable(series) {
-    console.log("Desplegando cursos");
+    console.log("Desplegando series");
     series.forEach(function (serie) {
         var trElement = document.createElement("tr");
         var tdName = document.createElement("td");
